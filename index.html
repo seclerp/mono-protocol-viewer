@@ -18,13 +18,13 @@
 <script src="protocol_renderer.js"></script>
 <script src="main.js"></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-138239427-1"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-02K648VHR9"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'UA-138239427-1');
+  gtag('config', 'G-02K648VHR9');
 </script>
 
 <section id='content'>
@@ -36,7 +36,7 @@
     <img id='experimental-on' src='ic_check_box_black_24px.svg'/>
     <img id='experimental-off' src='ic_check_box_outline_blank_black_24px.svg'/>
       Experimental</span>
-  <a href="https://github.com/aslushnikov/vanilla-protocol-viewer/">
+  <a href="https://github.com/seclerp/mono-protocol-viewer">
     <img class='toolbar-button github' src='github.png'></img>
   </a>
   <img class='toolbar-button home' src='home.svg'></img>
@@ -44,29 +44,18 @@
 <section id='sidebar'></section>
 <template id='landing'>
   <div class='box box-content'>
-    <h1>Vanilla Protocol Viewer</h1>
+    <h1>Chrome DevTools Protocol Extensions for Mono WASM Proxy</h1>
     <p>
-    The <strong>Chrome DevTools Protocol</strong> allows for tools to
-    instrument, inspect, debug and profile Chromium, Chrome and other
-    Blink-based browsers. Many existing projects <a href='https://developer.chrome.com/devtools/docs/debugging-clients'>currently use</a> the protocol.
-    The <a href='https://developers.google.com/web/tools/chrome-devtools/'>Chrome DevTools</a> uses this protocol and the team maintains its API.
+      .NET uses a special CDP-based debug proxy that handles messages from three different actors: a CDP-based debugger frontend, WASM Mono runtime, and a browser.<br/>
+      This viewer allows discovering additional non-documented pieces that are provided by debug proxy for debugger frontend for handling Mono or .NET-specific features.<br/>
+      Useful links:
+      <ul>
+        <li><a href="#"><code>mono_wasm_protocol.json</code></a>: unofficial protocol extension JSON specification</li>
+        <li><a href="https://github.com/dotnet/runtime/tree/main/src/mono/wasm/debugger">Mono WASM Proxy Sources</a></li>
+      </ul>
     </p>
     <p>
-    Instrumentation is divided into a number of domains (DOM, Debugger, Network
-    etc.). Each domain defines a number of commands it supports and events it
-    generates. Both commands and events are serialized JSON objects of a fixed
-    structure. You can either <a href='https://developer.chrome.com/devtools/docs/debugger-protocol'>debug over the wire</a> using the raw messages as
-    they are described in the corresponding domain documentation, or use
-    <a href='https://developer.chrome.com/devtools/docs/debugger-protocol#extension'>extension JavaScript API</a>.
+      Based on the excellent <a href='https://vanilla.aslushnikov.com/'>Minimalistic DevTools Protocol Viewer</a> by <a href="https://github.com/aslushnikov">aslushnikov</a>.
     </p>
-
-
-    <h3>Viewer Features</h3>
-    <ul>
-      <li><code>Blazingly fast</code> There are no roundtrips to the server to perform search or to render a page.
-      <li><code>Instant Search</code> Start typing anywhere to initiate <strong>fuzzy-searching</strong>.
-      <li><code>No Buildsteps</code> Written in vanilla JavaScript / HTML / CSS. Self-contained with zero dependencies.
-    </ul>
-    Inspired by <a href='https://chromedevtools.github.io/devtools-protocol/'>Chrome DevTools Protocol Viewer</a>.
   </div>
 </template>

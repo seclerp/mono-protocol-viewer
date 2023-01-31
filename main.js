@@ -1,6 +1,5 @@
 let PROTOCOLS = {
-  'browser_protocol.json':  'https://cdn.jsdelivr.net/gh/ChromeDevTools/devtools-protocol@master/json/browser_protocol.json',
-  'js_protocol.json':  'https://cdn.jsdelivr.net/gh/ChromeDevTools/devtools-protocol@master/json/js_protocol.json',
+  'mono_wasm_protocol.json':  'specs/mono_wasm_protocol.json'
 };
 
 document.addEventListener('DOMContentLoaded', () => {

@@ -1,0 +1,103 @@
+{
+  "version": {
+    "major": "1",
+    "minor": "0"
+  },
+  "domains": [
+    {
+      "domain": "Mono",
+      "description": "Contains commands and events related to Mono runtime.",
+      "experimental": true,
+      "events": [
+        {
+          "name": "runtimeReady",
+          "description": "Issued when Mono runtime is ready to use."
+        }
+      ]
+    },
+    {
+      "domain": "DotnetDebugger",
+      "description": "TBD",
+      "experimental": true,
+      "types": [],
+      "commands": [
+        {
+          "name": "getMethodLocation",
+          "description": "TBD",
+          "parameters": [
+            {
+              "name": "assemblyName",
+              "description": "TBD",
+              "type": "string"
+            },
+            {
+              "name": "typeName",
+              "description": "TBD",
+              "type": "string"
+            },
+            {
+              "name": "methodName",
+              "description": "TBD",
+              "type": "string"
+            }
+          ],
+          "returns": [
+            {
+              "name": "line",
+              "description": "TBD",
+              "type": "integer"
+            },
+            {
+              "name": "column",
+              "description": "TBD",
+              "type": "integer"
+            },
+            {
+              "name": "url",
+              "description": "TBD",
+              "type": "string"
+            }
+          ]
+        }
+      ],
+      "events": []
+    },
+    {
+      "domain": "Runtime",
+      "description": "TBD",
+      "experimental": true,
+      "types": [],
+      "commands": [
+        {
+          "name": "callFunctionOn",
+          "description": "TBD",
+          "parameters": [
+            {
+              "name": "objectId",
+              "description": "TBD",
+              "type": "string"
+            },
+            {
+              "name": "typeName",
+              "description": "TBD",
+              "type": "string"
+            },
+            {
+              "name": "methodName",
+              "description": "TBD",
+              "type": "string"
+            }
+          ],
+          "returns": [
+            {
+              "name": "result",
+              "description": "TBD",
+              "type": "object"
+            }
+          ]
+        }
+      ],
+      "events": []
+    }
+  ]
+}
