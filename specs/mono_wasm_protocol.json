@@ -74,7 +74,7 @@
               "name": "",
               "description": "TBD",
               "type": "array",
-              "item": {
+              "items": {
                 "$ref": "DotnetDebugger.DebuggerProperty"
               }
             }
