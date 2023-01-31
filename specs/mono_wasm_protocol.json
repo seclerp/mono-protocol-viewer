@@ -129,8 +129,8 @@
           "returns": []
         },
         {
-          "name": "setNexaddSymbolServerUrltIP",
-          "description": "TBD",
+          "name": "addSymbolServerUrl",
+          "description": "Note: this command will never respond, so don't wait for the response. When succeeded, it will emit 'Debugger.scriptParsed' event per each parsed .NET source file.",
           "availableSince": "5",
           "parameters": [
             {
