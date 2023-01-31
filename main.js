@@ -1,5 +1,5 @@
 let PROTOCOLS = {
-  'mono_wasm_protocol.json':  'specs/mono_wasm_protocol.json'
+  'mono_wasm_protocol.json': 'specs/mono_wasm_protocol.json'
 };
 
 document.addEventListener('DOMContentLoaded', () => {
