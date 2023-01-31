@@ -282,7 +282,7 @@ h4:hover .title-link {
   user-select: none;
 }
 
-span.experimental, span.deprecated {
+span.experimental, span.deprecated, span.available-since {
   font-size: 70%;
   text-transform: uppercase;
   background-color: #e57373;
