@@ -1,6 +1,6 @@
 {
   "version": {
-    "major": "1",
+    "major": "7",
     "minor": "0"
   },
   "domains": [
@@ -19,8 +19,127 @@
       "domain": "DotnetDebugger",
       "description": "TBD",
       "experimental": true,
-      "types": [],
+      "types": [
+        {
+          "id": "DebuggerProperty",
+          "description": "A key-value pair that represents DebuggerProperty.",
+          "type": "object",
+          "availableSince": "7",
+          "properties": [
+            {
+              "name": "key",
+              "description": "TBD",
+              "type": "string",
+              "enum": [
+                "JustMyCodeStepping"
+              ]
+            },
+            {
+              "name": "value",
+              "description": "TBD",
+              "type": "any"
+            }
+          ]
+        },
+        {
+          "id": "SourceLocation",
+          "description": "A key-value pair that represents DebuggerProperty.",
+          "type": "object",
+          "properties": [
+            {
+              "name": "scriptId",
+              "description": "TBD",
+              "type": "string"
+            },
+            {
+              "name": "lineNumber",
+              "description": "TBD",
+              "type": "integer"
+            },
+            {
+              "name": "columnNumber",
+              "description": "TBD",
+              "type": "integer"
+            }
+          ]
+        }
+      ],
       "commands": [
+        {
+          "name": "setDebuggerProperty",
+          "description": "Note: result of this call is returned outside of the \"result\" object, on the top level of JSON.",
+          "availableSince": "7",
+          "parameters": [
+            {
+              "name": "",
+              "description": "TBD",
+              "type": "array",
+              "item": {
+                "$ref": "DotnetDebugger.DebuggerProperty"
+              }
+            }
+          ],
+          "returns": [
+            {
+              "name": "justMyCodeEnabled",
+              "description": "TBD",
+              "optional": true,
+              "type": "boolean"
+            }
+          ]
+        },
+        {
+          "name": "setNextIP",
+          "description": "TBD",
+          "availableSince": "7",
+          "parameters": [
+            {
+              "name": "location",
+              "description": "TBD",
+              "$ref": "DotnetDebugger.SourceLocation"
+            }
+          ]
+        },
+        {
+          "name": "applyUpdates",
+          "description": "TBD",
+          "availableSince": "7",
+          "parameters": [
+            {
+              "name": "moduleGUID",
+              "description": "TBD",
+              "type": "string"
+            },
+            {
+              "name": "dmeta",
+              "description": "TBD",
+              "type": "string"
+            },
+            {
+              "name": "dil",
+              "description": "TBD",
+              "type": "string"
+            },
+            {
+              "name": "dpdb",
+              "description": "TBD",
+              "type": "string"
+            }
+          ],
+          "returns": []
+        },
+        {
+          "name": "setNexaddSymbolServerUrltIP",
+          "description": "TBD",
+          "availableSince": "5",
+          "parameters": [
+            {
+              "name": "url",
+              "description": "TBD",
+              "type": "string"
+            }
+          ]
+        },
         {
           "name": "getMethodLocation",
           "description": "TBD",
