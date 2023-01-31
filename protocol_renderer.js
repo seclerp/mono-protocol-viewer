@@ -262,6 +262,11 @@ class ProtocolRenderer {
       e.title = 'Deprecated, will be removed';
       element.appendChild(e);
     }
+    else if (item.availableSince) {
+      let e = element.span('available-since', '.NET ' + item.availableSince + '+');
+      e.title = 'Available in project targeting .NET ' + item.availableSince + ' or above';
+      element.appendChild(e);
+    }
   }
 
   static renderMethodIcon() {

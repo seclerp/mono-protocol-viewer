@@ -300,6 +300,10 @@ span.deprecated {
   background-color: #ffa03b;
 }
 
+span.available-since {
+  background-color: #4523cf;
+}
+
 #content .experimental-bg {
   background-color: rgba(255, 212, 212, 0.2);
 }
