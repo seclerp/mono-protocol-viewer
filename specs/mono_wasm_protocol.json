@@ -64,17 +64,17 @@
             },
             {
               "name": "dmeta",
-              "description": "TBD",
+              "description": "The metadata changes to be applied",
               "type": "string"
             },
             {
               "name": "dil",
-              "description": "TBD",
+              "description": "The IL changes to be applied",
               "type": "string"
             },
             {
               "name": "dpdb",
-              "description": "TBD",
+              "description": "The PDB changes to be applied",
               "type": "string"
             }
           ],
