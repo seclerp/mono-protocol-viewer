@@ -71,12 +71,9 @@
           "availableSince": "7",
           "parameters": [
             {
-              "name": "",
-              "description": "TBD",
-              "type": "array",
-              "items": {
-                "$ref": "DotnetDebugger.DebuggerProperty"
-              }
+              "name": "JustMyCodeStepping",
+              "description": "If true, enables stepping only into user code, not library one.",
+              "type": "boolean"
             }
           ],
           "returns": [
