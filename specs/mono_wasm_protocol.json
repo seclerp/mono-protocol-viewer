@@ -19,51 +19,6 @@
       "domain": "DotnetDebugger",
       "description": "TBD",
       "experimental": true,
-      "types": [
-        {
-          "id": "DebuggerProperty",
-          "description": "A key-value pair that represents DebuggerProperty.",
-          "type": "object",
-          "availableSince": "7",
-          "properties": [
-            {
-              "name": "key",
-              "description": "TBD",
-              "type": "string",
-              "enum": [
-                "JustMyCodeStepping"
-              ]
-            },
-            {
-              "name": "value",
-              "description": "TBD",
-              "type": "any"
-            }
-          ]
-        },
-        {
-          "id": "SourceLocation",
-          "description": "A key-value pair that represents DebuggerProperty.",
-          "type": "object",
-          "properties": [
-            {
-              "name": "scriptId",
-              "description": "TBD",
-              "type": "string"
-            },
-            {
-              "name": "lineNumber",
-              "description": "TBD",
-              "type": "integer"
-            },
-            {
-              "name": "columnNumber",
-              "description": "TBD",
-              "type": "integer"
-            }
-          ]
-        }
-      ],
       "commands": [
         {
           "name": "setDebuggerProperty",
