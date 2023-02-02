@@ -22,7 +22,7 @@
       "commands": [
         {
           "name": "setDebuggerProperty",
-          "description": "Note: result of this call is returned outside of the \"result\" object, on the top level of JSON.",
+          "description": "TBD.",
           "availableSince": "7",
           "parameters": [
             {
