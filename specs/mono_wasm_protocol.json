@@ -19,6 +19,31 @@
       "domain": "DotnetDebugger",
       "description": "TBD",
       "experimental": true,
+      "types": [
+        {
+          "id": "SourceLocation",
+          "description": "TBD.",
+          "type": "object",
+          "properties": [
+            {
+              "name": "scriptId",
+              "description": "Script identifier as reported in the `Debugger.scriptParsed`.",
+              "$ref": "Runtime.ScriptId"
+            },
+            {
+              "name": "lineNumber",
+              "description": "Line number in the script (0-based).",
+              "type": "integer"
+            },
+            {
+              "name": "columnNumber",
+              "description": "Column number in the script (0-based).",
+              "optional": true,
+              "type": "integer"
+            }
+          ]
+        }
+      ],
       "commands": [
         {
           "name": "setDebuggerProperty",
